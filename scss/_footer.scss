@@ -1,0 +1,168 @@
+.footer {
+  background: url('../Images/opiuvr.jpg');
+  background-size: cover;
+  color: $white;
+  margin-top: 30px;
+  padding-top: 30px;
+
+  a {
+    color: $white;
+  }
+  li {
+    list-style: none;
+  }
+  hr {
+    display: block;
+    width: 130px;
+    right: 0px;
+    position: relative;
+    transform: rotate(90deg);
+  }
+
+  &__content {
+    display: flex;
+    // background: cadetblue;
+    align-items: center;
+    justify-content: space-between;
+
+    .content__left {
+      // background: salmon;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 50%;
+      font-size: $font-med;
+
+      .email-input {
+        // background: navy;
+        width: 500px;
+        display: flex;
+
+        form {
+          display: flex;
+          align-items: center;
+        }
+
+        input[type='email'] {
+          border: 2px solid lightgrey;
+          font-family: inherit;
+          opacity: 0.9;
+          width: 190px;
+          height: 28px;
+          border-radius: 7px;
+          padding: 5px;
+          size: 30px;
+          margin-left: 10px;
+
+          &:focus {
+            border: 3px solid $orange;
+          }
+        }
+
+        input[type='button'] {
+          font-family: inherit;
+          margin-left: 20px;
+          background: $lightGreen;
+          border-radius: 32px;
+          width: 130px;
+          height: 30px;
+          margin-top: 8px;
+          display: flex;
+          color: $white;
+          font-size: $font-sm;
+          margin-bottom: 10px;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid grey;
+
+          &:hover {
+            background: $orange;
+          }
+        }
+      }
+      .company-address {
+        // background: goldenrod;
+        width: 470px;
+        font-size: $font-med;
+
+        p {
+          margin-top: 0;
+          line-height: 25px;
+        }
+      }
+    }
+
+    .content__right {
+      // background: seagreen;
+      display: flex;
+      width: 50%;
+      align-items: center;
+      justify-content: space-between;
+
+      .links-table {
+        // background: violet;
+        height: fit-content;
+
+        table {
+          // background: peru;
+
+          a:hover {
+            color: $orange;
+            text-decoration: underline;
+          }
+
+          tr {
+            height: 35px;
+
+            td {
+              width: 100px;
+              font-size: $font-sm;
+            }
+          }
+        }
+      }
+
+      .logo-social {
+        // background: forestgreen;
+
+        .logo {
+          // background: tomato;
+
+          img {
+            width: 8rem;
+            height: 5rem;
+          }
+        }
+
+        .social {
+          // background: firebrick;
+          a {
+            margin-left: 10px;
+
+            &:hover {
+              color: $orange;
+            }
+          }
+
+          table {
+            tr {
+              td {
+                width: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .copyright {
+    background: #000000ab;
+    font-size: $font-sm;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

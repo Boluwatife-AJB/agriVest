@@ -1,0 +1,164 @@
+.testimonial {
+  // background: crimson;
+  height: 480px;
+  padding-top: 40px;
+
+  &__content {
+    // background: hotpink;
+    position: relative;
+    // display: flex;
+
+    &__title {
+      // background: lightseagreen;
+      text-align: center;
+      color: $deepGreen;
+
+      h1 {
+        font-size: $font-ex-lg;
+        font-weight: 400;
+      }
+    }
+
+    &__testifier {
+      // background: palegreen;
+      // width: 270px;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .testimony {
+        background: url('../Images/palm_field.jpg');
+        background-size: cover;
+        width: 280px;
+        // height: 300px;
+        color: $white;
+        display: flex;
+        padding: 5px;
+        flex-direction: column;
+        text-align: center;
+        border-radius: 25px;
+        // flex-direction: column;
+        // align-items: center;
+
+        &__text {
+          // background: yellow;
+
+          .main-text {
+            font-size: $font-nm-md;
+            // margin-bottom: 0;
+          }
+
+          .detail-text {
+            margin-top: 0;
+            font-size: $font-sm;
+            font-weight: 300;
+          }
+        }
+
+        &__avatar {
+          background: firebrick;
+
+          img {
+            width: 80px;
+            height: 80px;
+          }
+        }
+      }
+
+      .part-one {
+        position: relative;
+        top: -45px;
+
+        .testimony__text {
+          height: 200px;
+
+          .main-text {
+            margin-bottom: 0;
+          }
+
+          .detail {
+            display: flex;
+            padding: 7px;
+            // background: gray;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+
+            &-text {
+              margin-left: 7px;
+            }
+          }
+
+          img {
+            width: 60px;
+            height: 60px;
+          }
+        }
+      }
+      .part-two {
+        // background: lawngreen;
+
+        .testimony__text {
+          height: 200px;
+
+          .main-text {
+            margin-bottom: 0;
+          }
+
+          .detail {
+            display: flex;
+            padding: 7px;
+            // background: gray;
+            position: relative;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 7px;
+
+            &-text {
+              margin-bottom: 0px;
+            }
+          }
+
+          img {
+            margin-top: 0;
+            width: 60px;
+            height: 60px;
+          }
+        }
+      }
+      .part-three {
+        // background: darkgreen;
+        position: relative;
+        bottom: -45px;
+
+        .testimony__text {
+          height: 200px;
+
+          .main-text {
+            margin-bottom: 0;
+          }
+
+          .detail {
+            display: flex;
+            padding: 7px;
+            // background: gray;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            margin-top: 17px;
+
+            &-text {
+              margin-right: 7px;
+            }
+          }
+
+          img {
+            width: 60px;
+            height: 60px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.vision {
+  // background: cornflowerblue;
+  padding-top: 70px;
+  height: 43.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__content {
+    // background: purple;
+    position: relative;
+    display: flex;
+    height: 500px;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+
+    &__text {
+      // background: palegoldenrod;
+      text-align: left;
+      width: 596px;
+
+      h1 {
+        margin-top: 3px;
+        color: $orange;
+        font-weight: 400;
+        line-height: 55px;
+        font-size: $font-ex-lg;
+        margin-bottom: 0;
+        margin-left: 0;
+      }
+
+      .vision-paragraph {
+        margin-top: 10px;
+      }
+    }
+
+    &__image {
+      position: absolute;
+      // background: crimson;
+      width: fit-content;
+      top: 12px;
+      right: 19px;
+
+      img {
+        width: 20rem;
+        height: 30rem;
+        border-radius: 10px;
+        transform: rotate(5deg);
+      }
+    }
+  }
+}

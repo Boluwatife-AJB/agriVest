@@ -1,0 +1,163 @@
+.advert {
+  background: url('../Images/palm_field.jpg');
+  background-size: cover;
+  height: 700px;
+
+  &__content {
+    padding-top: 50px;
+    // background: darkred;
+    position: relative;
+
+    &__title {
+      // background: crimson;
+      text-align: center;
+      margin-bottom: 0;
+
+      h1 {
+        font-size: $font-ex-lg;
+        font-weight: 500;
+        text-decoration: underline;
+        color: #00b83a;
+      }
+    }
+
+    &__cards {
+      // background: lawngreen;
+      display: flex;
+      justify-content: space-between;
+
+      .card__content {
+        border-radius: 12px;
+        padding: 10px;
+        background: brown;
+        width: 253px;
+        height: 410px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .title {
+          padding: 8px;
+          width: 210px;
+          height: 200px;
+          margin-top: 10px;
+          margin-right: 13px;
+          margin-left: 13px;
+          // margin: 5px 2.1px;
+          // background: black;
+          border-radius: 27px;
+          text-align: center;
+
+          h2 {
+            font-size: $font-sm-lg;
+            font-weight: 500;
+          }
+          h3 {
+            font-size: $font-med;
+            font-weight: 400;
+          }
+
+          h2,
+          h3 {
+            margin: 0;
+            // font-weight: 600;
+            color: $white;
+          }
+        }
+
+        .feature {
+          border-radius: 12px;
+          margin-top: 36px;
+          background: darkgray;
+          width: 210px;
+          margin-left: 15px;
+          margin-right: 15px;
+          margin-bottom: 26px;
+          font-size: $font-med;
+          line-height: 30px;
+          color: $white;
+
+          li {
+            margin-left: 0;
+            font-weight: 300;
+          }
+        }
+
+        .learn-more {
+          background: $lightGreen;
+          border-radius: 32px;
+          width: 210px;
+          height: 50px;
+          display: flex;
+
+          margin-bottom: 10px;
+          align-items: center;
+          justify-content: center;
+
+          &:hover {
+            background: $orange;
+          }
+
+          a {
+            color: $white;
+          }
+
+          p {
+            font-size: $font-med;
+          }
+        }
+
+        ul {
+          list-style: '- ';
+          padding-left: 15px;
+        }
+      }
+
+      .yellow {
+        background: url('../Images/maize.jpg');
+        background-size: cover;
+
+        .title {
+          background: #eab10685;
+        }
+
+        .feature {
+          background: #eab10685;
+        }
+      }
+      .green {
+        background: url('../Images/rice.jpg');
+        background-size: cover;
+
+        .title {
+          background: #659f57ba;
+        }
+        .feature {
+          background: #659f57ba;
+        }
+      }
+      .red {
+        background: url('../Images/tomatoes.jpg');
+        background-size: cover;
+
+        .title {
+          background: #dd0d04ad;
+        }
+        .feature {
+          background: #dd0d04ad;
+        }
+      }
+      .blue {
+        background: url('../Images/cow.jpg');
+        background-size: cover;
+
+        .title {
+          background: #042ddd87;
+        }
+        .feature {
+          background: #042ddd87;
+        }
+      }
+    }
+  }
+}

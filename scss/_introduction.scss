@@ -1,0 +1,59 @@
+.introduction {
+  // background: darkred;
+  padding-top: 70px;
+  height: 43.75rem;
+
+  &__content {
+    // background: crimson;
+    position: relative;
+
+    &__img {
+      padding-top: 12px;
+      padding-left: 20px;
+      // background: cornflowerblue;
+      width: fit-content;
+
+      img {
+        width: 20rem;
+        height: 30rem;
+        border-radius: 10px;
+        transform: rotate(-5deg);
+      }
+    }
+
+    &__text {
+      position: absolute;
+      top: 0px;
+      left: 471px;
+      // background: bisque;
+      text-align: right;
+      width: 590px;
+
+      h3 {
+        color: $orange;
+      }
+
+      h2 {
+        margin-top: 3px;
+        color: $deepGreen;
+        line-height: 55px;
+      }
+
+      .small-header {
+        font-size: 1.46rem;
+        font-weight: 600;
+        margin: 0;
+      }
+
+      .big-header {
+        // margin-top: 5px;
+        font-weight: 900;
+        font-size: $font-nm-lg;
+      }
+
+      .intro-paragraph {
+        font-size: $font-nm-md;
+      }
+    }
+  }
+}
