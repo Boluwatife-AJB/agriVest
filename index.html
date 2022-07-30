@@ -2,312 +2,561 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./Images/favicon-32x32.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,900;1,100;1,200;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css" />
-    <script src="https://kit.fontawesome.com/217c431eab.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+
+    <!--=============== REMIX ICONS ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="./css/styles.css" />
+
     <title>agriVest</title>
   </head>
   <body>
-    <section class="welcome">
-      <header class="header container flex">
-        <div class="header__logo flex-jc-sb">
-          <a href="#"><img src="Images/logo.png" alt="logo" /></a>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#home" class="nav__logo">
+          <i class="ri-leaf-line nav__logo-icon"></i> agriVest
+        </a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#products" class="nav__link">Products</a>
+            </li>
+            <li class="nav__item">
+              <a href="#faqs" class="nav__link">FAQs</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact Us</a>
+            </li>
+          </ul>
+
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
         </div>
-        <div class="header__links">
-          <ul class="links flex">
-            <li class="link__item"><a href="#">Home</a></li>
-            <li class="link__item"><a href="#">Services</a></li>
-            <li class="link__item"><a href="#">Location</a></li>
-            <li class="link__item"><a href="#">Investment</a></li>
-            <li class="link__item"><a href="#">About</a></li>
+
+        <div class="nav__btns">
+          <!-- Theme Change Button -->
+
+          <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home" id="home">
+        <div class="home__container container grid">
+          <img src="./images/home_small.png" class="home__img" alt="home-img" />
+
+          <div class="home__data">
+            <h1 class="home__title">
+              A digital platform <br />
+              for agribusiness
+            </h1>
+            <p class="home__description">
+              We bridge the gap between agric investors and farmers.
+              Revoluntionizing agriculture in Nigeria.
+            </p>
+            <a href="#about" class="button button--flex">
+              Explore <i class="ri-arrow-right-down-line button__icon"></i>
+            </a>
+          </div>
+
+          <div class="home__social">
+            <span class="home__social-follow">Follow Us</span>
+
+            <div class="home__social-links">
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="ri-facebook-fill"></i>
+              </a>
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="ri-instagram-line"></i>
+              </a>
+              <a
+                href="https://www.twitter.com"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="ri-twitter-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== ABOUT ====================-->
+      <section class="about section container" id="about">
+        <div class="about__container grid">
+          <img
+            src="./images/daniel-oberg-sEApBUS4fIk-unsplash-removebg-preview.png"
+            alt="about-img"
+            class="about__img"
+          />
+
+          <div class="about__data">
+            <h2 class="section__title about__title">
+              Who we really are & <br />
+              why choose us
+            </h2>
+            <p class="about__description">
+              We have over 4000+ unbiased reviews and our clients trust our
+              investment process. Application is fast and you get your capital
+              and ROI in due time.
+            </p>
+
+            <div class="about__details">
+              <p class="about__details-description">
+                <i class="ri-checkbox-fill about__details-icon"></i> We always
+                deliver on time.
+              </p>
+              <p class="about__details-description">
+                <i class="ri-checkbox-fill about__details-icon"></i> We give
+                have professionals who do the farming.
+              </p>
+              <p class="about__details-description">
+                <i class="ri-checkbox-fill about__details-icon"></i> 100%
+                capital + ROI back guaranteed.
+              </p>
+              <p class="about__details-description">
+                <i class="ri-checkbox-fill about__details-icon"></i> You get
+                discount on referrals
+              </p>
+            </div>
+            <a href="#" class="button--link button--flex"
+              >Shop Now <i class="ri-arrow-right-down-line button__icon"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== STEPS ====================-->
+      <section class="steps section container">
+        <div class="steps__bg">
+          <h2 class="section__title-center steps__title">
+            Steps to start your <br />
+            plants off right
+          </h2>
+
+          <div class="steps__container grid">
+            <div class="steps__card">
+              <div class="steps__card-number">01</div>
+              <h3 class="steps__card-title">You Invest</h3>
+              <p class="steps__card-description">
+                We have several varieties investment plans you can choose from.
+              </p>
+            </div>
+
+            <div class="steps__card">
+              <div class="steps__card-number">02</div>
+              <h3 class="steps__card-title">We Farm</h3>
+              <p class="steps__card-description">
+                Once you invest, we plant, we harvest and sell the produce.
+              </p>
+            </div>
+
+            <div class="steps__card">
+              <div class="steps__card-number">03</div>
+              <h3 class="steps__card-title">You Profit</h3>
+              <p class="steps__card-description">
+                You receive your capital and ROI after sales has been made.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== PRODUCTS ====================-->
+      <section class="product section container" id="products">
+        <h2 class="section__title-center">
+          Check out our <br />
+          Investment Plans
+        </h2>
+
+        <p class="product__description">
+          Here are some selected plans. Invest now and enjoy best quality.
+        </p>
+
+        <div class="product__container grid">
+          <article class="product__card">
+            <div class="product__circle"></div>
+
+            <img
+              src="./images/product1.png"
+              alt="product-img"
+              class="product__img"
+            />
+
+            <h3 class="product__title">Cacti Plant</h3>
+            <span class="product__price">$19.99</span>
+
+            <button class="button--flex product__button">
+              <i class="ri-shopping-bag-line"></i>
+            </button>
+          </article>
+
+          <article class="product__card">
+            <div class="product__circle"></div>
+
+            <img
+              src="./images/product2.png"
+              alt="product-img"
+              class="product__img"
+            />
+
+            <h3 class="product__title">Cactus Plant</h3>
+            <span class="product__price">$11.99</span>
+
+            <button class="button--flex product__button">
+              <i class="ri-shopping-bag-line"></i>
+            </button>
+          </article>
+
+          <article class="product__card">
+            <div class="product__circle"></div>
+
+            <img
+              src="./images/product3.png"
+              alt="product-img"
+              class="product__img"
+            />
+
+            <h3 class="product__title">Aloe Vera Plant</h3>
+            <span class="product__price">$6.99</span>
+
+            <button class="button--flex product__button">
+              <i class="ri-shopping-bag-line"></i>
+            </button>
+          </article>
+
+          <article class="product__card">
+            <div class="product__circle"></div>
+
+            <img
+              src="./images/product4.png"
+              alt="product-img"
+              class="product__img"
+            />
+
+            <h3 class="product__title">Succulent Plant</h3>
+            <span class="product__price">$7.99</span>
+
+            <button class="button--flex product__button">
+              <i class="ri-shopping-bag-line"></i>
+            </button>
+          </article>
+
+          <article class="product__card">
+            <div class="product__circle"></div>
+
+            <img
+              src="./images/product5.png"
+              alt="product-img"
+              class="product__img"
+            />
+
+            <h3 class="product__title">Succulent Plant</h3>
+            <span class="product__price">$8.99</span>
+
+            <button class="button--flex product__button">
+              <i class="ri-shopping-bag-line"></i>
+            </button>
+          </article>
+
+          <article class="product__card">
+            <div class="product__circle"></div>
+
+            <img
+              src="./images/product6.png"
+              alt="product-img"
+              class="product__img"
+            />
+
+            <h3 class="product__title">Green Plant</h3>
+            <span class="product__price">$12.99</span>
+
+            <button class="button--flex product__button">
+              <i class="ri-shopping-bag-line"></i>
+            </button>
+          </article>
+        </div>
+      </section>
+
+      <!--==================== QUESTIONS ====================-->
+      <section class="questions section" id="faqs">
+        <h2 class="section__title-center questions__title container">
+          Some common questions <br />
+          were often asked
+        </h2>
+
+        <div class="questions__container container grid">
+          <div class="questions__group">
+            <div class="questions__item">
+              <header class="questions__header">
+                <i class="ri-add-line questions__icon"></i>
+                <h3 class="questions__item-title">
+                  What causes leaves to become pale?
+                </h3>
+              </header>
+
+              <div class="questions__content">
+                <p class="questions__description">
+                  Plants are easy way to add color energy and transform your
+                  space but which planet is for you. Choosing the right plant.
+                </p>
+              </div>
+            </div>
+
+            <div class="questions__item">
+              <header class="questions__header">
+                <i class="ri-add-line questions__icon"></i>
+                <h3 class="questions__item-title">
+                  My flowers are falling off or dying?
+                </h3>
+              </header>
+
+              <div class="questions__content">
+                <p class="questions__description">
+                  Plants are easy way to add color energy and transform your
+                  space but which planet is for you. Choosing the right plant.
+                </p>
+              </div>
+            </div>
+
+            <div class="questions__item">
+              <header class="questions__header">
+                <i class="ri-add-line questions__icon"></i>
+                <h3 class="questions__item-title">
+                  What causes brown crispy leaves?
+                </h3>
+              </header>
+
+              <div class="questions__content">
+                <p class="questions__description">
+                  Plants are easy way to add color energy and transform your
+                  space but which planet is for you. Choosing the right plant.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="questions__group">
+            <div class="questions__item">
+              <header class="questions__header">
+                <i class="ri-add-line questions__icon"></i>
+                <h3 class="questions__item-title">How do i choose a plant?</h3>
+              </header>
+
+              <div class="questions__content">
+                <p class="questions__description">
+                  Plants are easy way to add color energy and transform your
+                  space but which planet is for you. Choosing the right plant.
+                </p>
+              </div>
+            </div>
+
+            <div class="questions__item">
+              <header class="questions__header">
+                <i class="ri-add-line questions__icon"></i>
+                <h3 class="questions__item-title">How do I change the pots?</h3>
+              </header>
+
+              <div class="questions__content">
+                <p class="questions__description">
+                  Plants are easy way to add color energy and transform your
+                  space but which planet is for you. Choosing the right plant.
+                </p>
+              </div>
+            </div>
+
+            <div class="questions__item">
+              <header class="questions__header">
+                <i class="ri-add-line questions__icon"></i>
+                <h3 class="questions__item-title">
+                  Why are gnats flying around my plant?
+                </h3>
+              </header>
+
+              <div class="questions__content">
+                <p class="questions__description">
+                  Plants are easy way to add color energy and transform your
+                  space but which planet is for you. Choosing the right plant.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== CONTACT ====================-->
+      <section class="contact section container" id="contact">
+        <div class="contact__container grid">
+          <div class="contact__box">
+            <h2 class="section__title">
+              Reach out to us today <br />
+              via any of the given <br />
+              information
+            </h2>
+
+            <div class="contact__data">
+              <div class="contact__information">
+                <h3 class="contact__subtitle">Call us for instant support</h3>
+                <span class="contact__description">
+                  <i class="ri-phone-line contact__icon"></i> +234 814 316 6796
+                </span>
+              </div>
+
+              <div class="contact__information">
+                <h3 class="contact__subtitle">Write us a mail</h3>
+                <span class="contact__description">
+                  <i class="ri-mail-line contact__icon"></i> plantex@gmail.com
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <form action="" class="contact__form">
+            <div class="contact__inputs">
+              <div class="contact__content">
+                <input type="email" placeholder=" " class="contact__input" />
+                <label for="" class="contact__label">Email</label>
+              </div>
+
+              <div class="contact__content">
+                <input type="text" placeholder=" " class="contact__input" />
+                <label for="" class="contact__label">Subject</label>
+              </div>
+
+              <div class="contact__content contact__area">
+                <textarea
+                  name="message"
+                  placeholder=" "
+                  class="contact__input"
+                ></textarea>
+                <label for="" class="contact__label">Message</label>
+              </div>
+            </div>
+
+            <button class="button button--flex">
+              Send Message
+              <i class="ri-arrow-right-up-line button__icon"></i>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+      <div class="footer__container container grid">
+        <div class="footer__content">
+          <a href="#" class="footer__logo"
+            ><i class="ri-leaf-line footer__logo-icon"></i> Plantex</a
+          >
+
+          <h3 class="footer__title">
+            Subscribe to our newsletter <br />
+            to stay updated
+          </h3>
+
+          <div class="footer__subscribe">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              class="footer__input"
+            />
+
+            <button class="button button--flex footer__button">
+              Subscribe
+              <i class="ri-arrow-right-up-line button__icon"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Our Address</h3>
+
+          <ul class="footer__data">
+            <li class="footer__information">The 39th Tower,</li>
+            <li class="footer__information">39, Simpson Street,</li>
+            <li class="footer__information">Ikoyi, Lagos.</li>
           </ul>
         </div>
-        <!-- <div class="header__menu" id="menu">
-          <div class="hamburger" id="btnHamburger">
-            <a href="#" class="btnHamburger" ">
-              <span></span>
-              <span></span>
-              <span></span>
-            </a>
-          </div> -->
-          <!-- <div class="links" id="link">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Location</a></li>
-              <li><a href="#">Investment</a></li>
-              <li><a href="#">About</a></li>
-            </ul>
-          </div>
-        </div> -->
-        <div class="header__button">
-          <a class="button">LOG IN <i class="fa-solid fa-arrow-right-to-bracket"></i></a>
-        </div>
-      </header>
-      <hr class="container" />
-      <div class="welcome__landing container">
-        <h1 class="heading" data-aos="fade-down"
-        data-aos-easing="linear"
-        data-aos-duration="1500">A digital platform for Agribusiness</h1>
-        <div class="features" data-aos="fade-up"
-        data-aos-duration="3000">
-          <h3>Invest In Farms</h3>
-          <h3>Trade in Commodities</h3>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Contact Us</h3>
+
+          <ul class="footer__data">
+            <li class="footer__information">+234 814 316 6796</li>
+
+            <div class="footer__social">
+              <a href="https://www.facebook.com/" class="footer__social-link">
+                <i class="ri-facebook-fill"></i>
+              </a>
+              <a href="https://www.instagram.com/" class="footer__social-link">
+                <i class="ri-instagram-line"></i>
+              </a>
+              <a href="https://www.twitter.com/" class="footer__social-link">
+                <i class="ri-twitter-fill"></i>
+              </a>
+            </div>
+          </ul>
         </div>
 
-        <br>
-        <div class="button-links" data-aos="fade-up">
-          <div class="get-started"><a href="#" class="button"><h3>GET STARTED </h3></a></div>
-          <div class="sign-up"><a href="#" class="button"><h2>SIGN UP</h2></a></div>
-        </div>
-        <br>
-        <br>
-        <br>
-    </section>
+        <div class="footer__content">
+          <h3 class="footer__title">We accept all credit cards</h3>
 
-    
-    <section class="introduction ">
-      <div class="introduction__content container"><div class="introduction__content__img" data-aos="fade-right">
-        <img src="Images/farmer.jpg" alt="">
-      </div>
-      <div class="introduction__content__text " data-aos="zoom-in-left">
-        <h3 class="small-header">WHAT DO WE DO?</h3>
-        <h2 class="big-header">We brigde the gap between investors and farmers</h2>
-        <p class="intro-paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto nemo exercitationem aperiam corporis deserunt repellat iure! Consequuntur facere est aliquam atque commodi accusamus odio quidem, nulla omnis neque, quam perspiciatis qui? Perferendis, consectetur molestias. Itaque vero perspiciatis labore quaerat amet ut aliquid dolor in necessitatibus, quasi architecto nobis eveniet.</p>
-      </div>
-      
-      </div>
-    </section>
-
-    <section class="goal">
-      <div class="goal__box box-up">
-        <h2>You<br>Invest <i class="fa-solid fa-coins"></i></h2>
-      </div>
-      <div class="goal__middle">
-        <div class="left-goal">
-          <h1>We</h1>
-        </div>
-
-        <div class="right-goal">
-          <h3>Plant <i class="fa-solid fa-leaf"></i></h3>
-          <h3>Harvest <i class="fa-solid fa-tractor"></i><h3>
-          <h3>Sell <i class="fa-solid fa-money-bill"></i></h3>
-        </div>
-        
-        
-      </div>
-      <div class="goal__box box-down">
-        <h2>You <i class="fa-solid fa-money-check-dollar"></i><br>Cash Out </i></h2>
-      </div>
-    </section>
-
-    <section class="vision">
-
-      <div class="vision__content container">
-        <div class="vision__content__text" data-aos="zoom-in-right">
-          <h1>OUR VISION</h1>
-          <p class="vision-paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto nemo exercitationem aperiam corporis deserunt repellat iure! Consequuntur facere est aliquam atque commodi accusamus odio quidem, nulla omnis neque, quam perspiciatis qui? Perferendis, consectetur molestias. Itaque vero perspiciatis labore quaerat amet ut aliquid dolor in necessitatibus, quasi architecto nobis eveniet.</p>
-        </div>
-        <div class="vision__content__image" data-aos="fade-left">
-          <img src="Images/tomatoes.jpg" alt="">
-        </div>
-      </div>
-    </section>
-
-    <section class="advert">
-      <div class="advert__content container">
-        <div class="advert__content__title">
-          <h1>SMART INVESTMENT PLANS</h1>
-        </div>
-        <div class="advert__content__cards">
-          <div class="card__content yellow">
-            <div class="title">
-              <h2>Yellow Plan</h2>
-              <h3>Price: NGN 120,000</h3>
-            </div>
-            <div class="feature">
-              <ul>
-                <li>Maize Farming <i class="fa-solid fa-corn"></i></li>
-                <li>Starting Amount: NGN 50,000</li>
-                <li>Duration: 26 Weeks</li>
-                <li>Expected ROI: 30%</li>
-              </ul>
-            </div>
-            <div class="learn-more">
-              <a href="#"><p>Learn More</p></a>
-          </div>
-          </div>
-          <div class="card__content green">
-            <div class="title">
-              <h2>Green Plan</h2>
-              <h3>Price: NGN 350,000</h3>
-            </div>
-            <div class="feature">
-              <ul>
-                <li>Rice Farming🌾</li>
-                <li>Starting Amount: NGN 100,000</li>
-                <li>Duration: 40 Weeks</li>
-                <li>Expected ROI: 32%</li>
-              </ul>
-            </div>
-            <div class="learn-more">
-              <a href="#"><p>Learn More</p></a>
-          </div>
-          </div>
-          <div class="card__content red">
-            <div class="title">
-              <h2>Red  Plan</h2>
-              <h3>Price: NGN 600,000</h3>
-            </div>
-            <div class="feature">
-              <ul>
-                <li>Tomatoe Farming <i class="fa-solid fa-tomato"></i></li>
-                <li>Starting Amount: NGN 165,000</li>
-                <li>Duration: 70 Weeks</li>
-                <li>Expected ROI: 45.2%</li>
-              </ul>
-            </div>
-            <div class="learn-more">
-              <a href="#"><p>Learn More</p></a>
-          </div>
-          </div>
-          <div class="card__content blue">
-            <div class="title">
-              <h2>Blue Plan</h2>
-              <h3>Price: NGN 1,500,000</h3>
-            </div>
-            <div class="feature">
-              <ul>
-                <li>Cattle Farming <i class="fa-solid fa-cow"></i></li>
-                <li>Starting Amount: NGN 700,000</li>
-                <li>Duration: 50 Weeks</li>
-                <li>Expected ROI: 46%</li>
-              </ul>
-            </div>
-            <div class="learn-more">
-              <a href="#"><p>Learn More</p></a>
-          </div>
-          
-        </div>
-      </div>
-    </section>
-
-    <section class="testimonial">
-      <div class="testimonial__content container">
-        <div class="testimonial__content__title">
-          <h1>TESTIMONIALS</h1>
-        </div>
-        <div class="testimonial__content__testifier">
-          <div class="testimony part-one" data-aos="fade-right"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-sine">
-            <div class="testimony__text">
-              <p class="main-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <br>
-              <div class="detail">
-                <img src="Images/avatar.png" alt="">
-                <p class="detail-text">Boluwatife, West London</p>
-              </div>
-
-            </div>
-            
-          </div>
-          <div class="testimony part-two" data-aos="fade-up"
-          data-aos-anchor-placement="bottom-bottom">
-            <div class="testimony__text">
-              <p class="main-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <div class="detail">
-                <p class="detail-text">Boluwatife, West London</p>
-                <img src="Images/avatar.png" alt="">
-              </div>
-            </div>
-            
-          </div>
-          <div class="testimony part-three" data-aos="fade-left"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-sine">
-            <div class="testimony__text">
-              <p class="main-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <div class="detail">
-                <p class="detail-text">Boluwatife, West London</p>
-                <img src="Images/avatar.png" alt="">
-              </div>
-            </div>
-            
+          <div class="footer__cards">
+            <img src="./images/card1.png" alt="card-img" class="footer__card" />
+            <img src="./images/card2.png" alt="card-img" class="footer__card" />
+            <img src="./images/card3.png" alt="card-img" class="footer__card" />
+            <img src="./images/card4.png" alt="card-img" class="footer__card" />
           </div>
         </div>
       </div>
-    </section>
-    <section class="footer">
-      <footer class="container footer__content">
-        
-          <div class="content__left">
-            <div class="email-input">
-              <form action="">
-                Email Address: <input type="email" name="Email-Address" id="" placeholder="agricvest@example.com">
-                <input type="button" value="Submit">
-              </form>
-            </div>
-            <div class="company-address">
-              <i class="fa-solid fa-map-pin"></i> <p>The 39th Tower,<br> Plot 39, Bethany Street, <br> Zion Island, Lagos. Nigeria.</p>
-            </div>
-          </div>
-          <hr>
-          <div class="content__right">
-            <div class="links-table">
-              <table>
-                <tr>
-                  <td><a href="#">Home</a></td>
-                  <td><a href="#">Investment</a></td>
-                </tr>
-                <tr>
-                  <td><a href="#">Services</a></td>
-                  <td><a href="#">About</a></td>
-                </tr>
-                <tr>
-                  <td><a href="#">Locations</a></td>
-                </tr>
-              </table>
-            </div>
-            <div class="logo-social">
-              <div class="logo">
-                <img src="Images/logo.png" alt="">
-              </div>
-              <div class="social">
-                
-                <a href="https://twitter.com/boluwatife_aj"><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://www.facebook.com/boluwatife.ajose.5/"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="https://https://wa.me/08143166796?text=I%20am"><i class="fa-brands fa-whatsapp"></i></a>
-                <a href="https://www.instagram.com/boluwatife_abayomi/"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/boluwatife-ajose-021768148/"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href=""><i class="fa-regular fa-rocket-launch"></i></a>
-                
-                
-                <!-- <p>Boluwatife Ajose</p> -->
-              </div>
-            </div>
-          </div>
-        
-      </footer>
-      <div class="copyright">
-        <p>&copy;The App Factory 2022 || All Rights Reserved.</p>
-      </div>
-      
 
-    </section>
+      <p class="footer__copyright">
+        &#169; Boluwatife Ajose || All rights reserved
+      </p>
+    </footer>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+    <!--=============== SCROLL UP ===============-->
 
-  <script src="./main.js"></script>
+    <a href="" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-fill scrollup__icon"></i>
+    </a>
+
+    <!--=============== SCROLL REVEAL ===============-->
+    <script src="./js/scrollreveal.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="./js/main.js "></script>
   </body>
 </html>

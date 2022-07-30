@@ -1,0 +1,23 @@
+body.dark-theme {
+  --first-color-dark: hsl(var(--hue), 8%, 20%);
+  --title-color: hsl(var(--hue), 4%, 95%);
+  --text-color: hsl(var(--hue), 4%, 75%);
+  --body-color: hsl(var(--hue), 8%, 12%);
+  --container-color: hsl(var(--hue), 8%, 16%);
+}
+
+.dark-theme {
+  .steps__bg,
+  .questions {
+    background-color: var(--first-color-dark);
+  }
+
+  .product__circle,
+  .footer__subscribe {
+    background-color: var(--container-color);
+  }
+
+  .scroll-header {
+    box-shadow: 0 1px 4px hsla(var(--hue), 4%, 4%, 0.3);
+  }
+}

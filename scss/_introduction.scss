@@ -1,58 +1,67 @@
 .introduction {
-  // background: darkred;
-  padding-top: 70px;
-  height: 43.75rem;
+  padding: 3rem 0;
+  display: flex;
+  // background-color: red;
+  text-align: center;
 
+  @media screen and (min-width: 768px) {
+    padding-top: 4rem;
+  }
+
+  #intro-content {
+    @media screen and (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: stretch;
+      align-items: center;
+      text-align: right;
+    }
+  }
   &__content {
-    // background: crimson;
-    position: relative;
-
-    &__img {
-      padding-top: 12px;
-      padding-left: 20px;
-      // background: cornflowerblue;
-      width: fit-content;
-
-      img {
-        width: 20rem;
-        height: 30rem;
-        border-radius: 10px;
-        transform: rotate(-5deg);
-      }
+    text-align: center;
+    row-gap: 2rem;
+    @media screen and (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+      align-items: center;
+      text-align: right;
     }
 
+    img {
+      border-radius: 7px;
+      transform: rotate(-2deg);
+
+      @media screen and (min-width: 768px) {
+        width: 20rem;
+        transform: rotate(-7deg);
+      }
+    }
     &__text {
-      position: absolute;
-      top: 0px;
-      left: 471px;
-      // background: bisque;
-      text-align: right;
-      width: 590px;
+      margin-top: var(--mb-3);
+      // background-color: rebeccapurple;
 
+      h2,
       h3 {
-        color: $orange;
-      }
-
-      h2 {
-        margin-top: 3px;
-        color: $deepGreen;
-        line-height: 55px;
-      }
-
-      .small-header {
-        font-size: 1.46rem;
-        font-weight: 600;
         margin: 0;
       }
 
+      .small-header,
       .big-header {
-        // margin-top: 5px;
-        font-weight: 900;
-        font-size: $font-nm-lg;
+        margin-bottom: var(--mb-1);
+      }
+
+      h3 {
+        font-size: 1rem;
+        color: var(--orange-color);
+      }
+
+      h2 {
+        font-size: var(--h2-font-size);
+        line-height: 1.2;
+        color: var(--green-color);
       }
 
       .intro-paragraph {
-        font-size: $font-nm-md;
+        font-size: var(--small-font-size);
       }
     }
   }

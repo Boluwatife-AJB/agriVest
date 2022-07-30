@@ -1,0 +1,123 @@
+.home {
+  padding: 3.5rem 0 2rem;
+
+  @media screen and (min-width: 767px) {
+    padding: 10rem 0 5rem;
+  }
+
+  @media screen and (min-width: 992px) {
+    padding: 13rem 0 5rem;
+  }
+
+  &__container {
+    position: relative;
+    row-gap: 2rem;
+
+    @media screen and (min-width: 767px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__img {
+    width: 200px;
+
+    justify-self: center;
+
+    @media screen and (max-width: 320px) {
+      width: 180px;
+    }
+
+    @media screen and (min-width: 767px) {
+      width: 280px;
+      order: 1;
+    }
+
+    @media screen and (min-width: 992px) {
+      width: 450px;
+      margin-top: -4rem;
+    }
+  }
+
+  &__title {
+    font-size: var(--big-font-size);
+    line-height: 140%;
+    margin-bottom: var(--mb-1);
+
+    @media screen and (max-width: 320px) {
+      font-size: var(--h1-font-size);
+    }
+  }
+
+  &__description {
+    margin-bottom: var(--mb-2-5);
+
+    @media screen and (min-width: 992px) {
+      padding-right: 7rem;
+    }
+  }
+
+  &__social {
+    position: absolute;
+    top: 2rem;
+    right: -1rem;
+    display: grid;
+    justify-items: center;
+    row-gap: 3.5rem;
+
+    &-follow {
+      font-weight: var(--font-medium);
+      font-size: var(-smaller-font-size);
+      color: var(--first-color);
+      position: relative;
+      transform: rotate(90deg);
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 1rem;
+        height: 2px;
+        background-color: var(--first-color);
+        right: -45%;
+        top: 50%;
+
+        @media screen and (min-width: 1200px) {
+          width: 1.5rem;
+          right: -60%;
+        }
+      }
+
+      @media screen and (min-width: 1200px) {
+        font-size: var(--small-font-size);
+      }
+    }
+
+    &-links {
+      display: inline-flex;
+      flex-direction: column;
+      row-gap: 0.25rem;
+    }
+
+    &-link {
+      font-size: 1rem;
+      color: var(--first-color);
+      transition: 0.3s;
+
+      &:hover {
+        transform: translateX(0.25rem);
+      }
+
+      @media screen and (min-width: 1200px) {
+        font-size: 1.15rem;
+      }
+    }
+
+    @media screen and (min-width: 767px) {
+      top: 30%;
+    }
+
+    @media screen and (min-width: 1200px) {
+      right: -3rem;
+      row-gap: 4.5rem;
+    }
+  }
+}

@@ -1,0 +1,74 @@
+.steps {
+  &__bg {
+    background-color: var(--first-color);
+    padding: 3rem 2rem 2rem;
+    border-radius: 1rem;
+
+    @media screen and (max-width: 320px) {
+      padding: 2rem 1rem;
+    }
+
+    @media screen and (min-width: 992px) {
+      padding: 3.5rem 2.5rem;
+    }
+  }
+
+  &__container {
+    gap: 2rem;
+    padding-top: 1rem;
+
+    @media screen and (min-width: 576px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (min-width: 992px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__title {
+    color: #fff;
+  }
+
+  &__card {
+    background-color: var(--container-color);
+    padding: 2.5rem 3rem 2rem 1.5rem;
+    border-radius: 1rem;
+
+    &-number {
+      display: inline-block;
+      background-color: var(--first-color-alt);
+      color: #fff;
+      padding: 0.5rem 0.75rem;
+      border-radius: 0.25rem;
+      font-size: var(--h2-font-size);
+      margin-bottom: var(--mb-1-5);
+      transition: 0.3s;
+
+      &:hover {
+        transform: translateY(-0.25rem);
+      }
+    }
+
+    &-title {
+      font-size: var(--h3-font-size);
+      margin-bottom: var(--mb-0-5);
+
+      @media screen and (min-width: 992px) {
+        font-size: var(--normal-font-size);
+      }
+    }
+
+    &-description {
+      font-size: var(--small-font-size);
+    }
+
+    &:hover {
+      transform: translateY(-0.25rem);
+    }
+
+    @media screen and (max-width: 320px) {
+      padding: 1.5rem;
+    }
+  }
+}
